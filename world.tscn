@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://brh0g1vvmrpu7"]
+
+[ext_resource type="PackedScene" uid="uid://yicf4jbn5lhx" path="res://tile_map.tscn" id="1_m8vui"]
+[ext_resource type="PackedScene" uid="uid://cj6d3qhdrup73" path="res://player.tscn" id="2_mlk8h"]
+[ext_resource type="PackedScene" uid="uid://d2a566txpdqvo" path="res://enemies/enemy_slime.tscn" id="3_xdkl8"]
+
+[node name="World" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_m8vui")]
+
+[node name="Player" parent="." instance=ExtResource("2_mlk8h")]
+position = Vector2(112, 216)
+
+[node name="EnemySlime" parent="." instance=ExtResource("3_xdkl8")]
+position = Vector2(232, 240)
